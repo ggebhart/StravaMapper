@@ -1,0 +1,11 @@
+﻿.premium, .premium a {
+    background-color: #FC4C02;
+    color: #FFFFFF;
+}
+
+.gridHeader {
+    font-weight: bold;
+    border: solid 1px black;
+    background-color: #FC4C02;
+    color: #FFFFFF;
+}

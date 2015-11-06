@@ -1,0 +1,9 @@
+﻿<h1>Welcome to the Strava Mapper!</h1>
+<p>This is an application designed to showcase the use of AngularJS, JQuery, Bootstrap, and Google Maps.  
+<br />The application is designed to work with the <a href="http://strava.github.io/api/">Strava API</a> to get data about an authenticated athlete</p>
+
+<div class="row">
+    <div class="col-xs-3" ng-repeat="navCmd in navigationCommands">
+        <a href="{{navCmd.src}}" class="large btn btn-primary">{{navCmd.name}}</a>
+    </div>
+</div>

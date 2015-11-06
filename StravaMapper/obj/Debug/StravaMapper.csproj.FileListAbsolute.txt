@@ -1,0 +1,6 @@
+c:\users\bobbie\documents\visual studio 2013\Projects\StravaMapper\StravaMapper\bin\StravaMapper.dll.config
+c:\users\bobbie\documents\visual studio 2013\Projects\StravaMapper\StravaMapper\bin\StravaMapper.dll
+c:\users\bobbie\documents\visual studio 2013\Projects\StravaMapper\StravaMapper\bin\StravaMapper.pdb
+c:\users\bobbie\documents\visual studio 2013\Projects\StravaMapper\StravaMapper\obj\Debug\StravaMapper.csprojResolveAssemblyReference.cache
+c:\users\bobbie\documents\visual studio 2013\Projects\StravaMapper\StravaMapper\obj\Debug\StravaMapper.dll
+c:\users\bobbie\documents\visual studio 2013\Projects\StravaMapper\StravaMapper\obj\Debug\StravaMapper.pdb
