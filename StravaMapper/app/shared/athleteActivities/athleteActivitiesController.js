@@ -2,6 +2,7 @@
     // Initialization Block
     $scope.athleteActivities = null;
 
+    // Get a listing of the athlete's activities to display on a list
     athleteService.loadAthleteActivities(0)
         .then(function (data) {
             var activities = angular.fromJson(data);
@@ -18,6 +19,7 @@
             console.log("Error: " + error);
         });
 
+    // Build up the data structures needed to draw a course map
     function populateMap(activityId) {
         athleteService.loadActivityStream(activityId)
             .then(function (data) {
@@ -35,7 +37,7 @@
                 $scope.activityStream = stream;
                 $scope.coordinates = coordinates;
                 $scope.message = "success";
-                $scope.$apply();
+                $scope.$apply(); // Needed to refresh the data on the screen after the async call returns
                 drawMap();
             }, function (error) {
                 $scope.message = "Error: " + error;
@@ -43,6 +45,7 @@
             });
     }
 
+    // Draws a Google map with the start and finish markers and draws to course taken
     function drawMap() {
 
         // Create a map object and specify the DOM element for display.
@@ -81,6 +84,7 @@
 
 }]);
 
+// Makes the athlete profile reusable in an easier way
 app.directive('athleteActivities', function () {
     return {
         templateUrl: 'app/shared/athleteActivities/athleteActivities.html',

@@ -12,6 +12,8 @@
         $scope.infoLevelText = ($scope.showDetail ? "Detail" : "Summary");
     }; // toggleDetail
 
+    // Load an athlete by default
+    // TODO:  Accept a route param to control which athlete loads
     athleteService.loadAthleteData(0)
         .then(function (data) {
             var athlete = angular.fromJson(data);
@@ -35,6 +37,7 @@
         })
 }]);
 
+// Makes the athlete profile reusable in an easier way
 app.directive('athleteProfile', function () {
     return {
         templateUrl: 'app/shared/athleteProfile/athleteProfile.html',
